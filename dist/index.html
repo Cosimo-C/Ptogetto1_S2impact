@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenEarth</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="../assets/img/GH_logo.png" class="favicon" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../assets/img/GH_logo.png" alt="logo GreenEarth" class="img_logo"/>GreenEarth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Progetti
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Foreste</a></li>
+                <li><a class="dropdown-item" href="#">Coste</a></li>
+                <li><a class="dropdown-item" href="#">Oceani</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero_container">
+      <div class="hero">
+        <div class="slogan">
+          <h2>Il futuro è nelle nostre mani.<br>Scegli di essere parte della soluzione.</h2>
+          <div class="button_cta">
+            <a href="#Contacts" class="button_slogan">Unisciti a noi!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <section class="about" id="About">
+        <h1 class="about_h1">Salvare il pianeta Terra è la nostra missione</h1>
+        <div class="mission">
+          <div class="foreste">
+            <h2>Le Foreste</h2>
+            <p>
+              Piantiamo alberi in aree deforestate per ripristinare ecosistemi
+              vitali e combattere il cambiamento climatico.
+              Perseguiamo obiettivi ben precisi. <br>
+          </div>
+          <div class="coste">
+            <h2>Le zone costiere</h2>
+            <p>
+              Formazione di gruppi di giovani che diventano "ambasciatori del mare", organizzando attività educative nelle scuole e nelle comunità locali. 
+            </p>
+          </div>
+          <div class="oceani">
+            <h2>Gli oceani</h2>
+            <p>
+              Collaboriamo con altre aziende per raccogliere fondi utili ad acquistare le tecnologie necessarie alla rimozione della plastica e altri inquinanti dai nostri
+              mari.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Projects">
+        <div class="projects_hero">
+          <h1>I nostri progetti</h1>
+        </div>
+        <div class="project_box_container">
+          <div class="box1">
+            <h1>Foreste</h1>
+            <p>Selezioniamo specie autoctone, effettuiamo monitoraggi di aree d'interesse, e utilizziamo tecniche di
+              riforestazione avanzate per garantire la massima efficacia dei nostri interventi.</p> 
+          </div>
+          <div class="box2">
+            <h1>Persone</h1>
+            <p>Sensibilizzare l'opinione pubblica: promuoviamo un'educazione ambientale e incoraggiamo tutti a adottare comportamenti più sostenibili. 
+                Organizziamo eventi di pulizia con l'obiettivo di rimuovere grandi quantità di rifiuti.
+            </p> 
+          </div>
+          <div class="box3">
+            <h1>Oceani</h1>
+            <p>Ci impegnamo in campagne politiche e di raccolta fondi per l'acquisto di strumenti e tecnologie all'avanguardia
+              per la rimozione della plastica dagli oceani per collaborare con altre Onlus.</p>  
+          </div>
+          <div class="box4">
+            <h1>Di più!</h1>
+            <p>Abbiamo sempre qualcosa in programma: collaboriamo con aziende, scuole, associazioni sportive e non solo. Sui nostri social potrai rimanere sempre aggiornato, seguici per sostenerci o unirti a noi!</p>  
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="contatti">
+      <h2>Contattaci!</h2>
+      <p>Per conoscere le iniziative in programma per partecipare alle giornate di volontariato, o per iniziare a lavorare con noi, scrivici qui sotto o visita i nostri canali social!</p>
+      <div class="form">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label-nome">Nome</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label-email">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label-text">Messaggio</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Scrivi perchè ci stai contattando(es: Calendario attività; Collaborazione ecc.)" rows="2" required></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-secondary" type="submit">Submit form</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="rights"><p>Copyrights 2024</p></div>
+      <div class="social">
+        <img src="../assets/img/social-icon/fb.svg" alt="icona_social" class="icon" />
+        <img src="../assets/img/social-icon/instagram.svg" alt="icona_social" class="icon" />
+        <img src="../assets/img/social-icon/linkedin.svg" alt="icona_social" class="icon" />    
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

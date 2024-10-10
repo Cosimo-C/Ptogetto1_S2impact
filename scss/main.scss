@@ -1,0 +1,226 @@
+$primary-color: rgb(38, 65, 54);
+$secondary-color: #1f6261;
+$text-color: #fff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  font-style: sans-serif;
+  font-weight: 500;
+  font-size: 18;
+}
+nav {
+  min-height: 10vh;
+  
+}
+.img_logo {
+  max-width: 80px;
+  height: auto;
+  margin-left: 10px;
+}
+.hero_container {
+  min-height: 50vh;
+  padding-top: 10vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  .hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to top, rgba(38, 65, 54, 0.954),rgba(38, 38, 65, 0.01)), url("../../assets/img/hero_2.avif");
+    background-position: center;
+    background-size: cover;
+    .slogan {
+         padding-top: 6vh;
+         text-align: center;
+         h2 {
+         color: $text-color;
+         font-size: 3rem;
+         padding: 20px;
+         }
+         .button_slogan {
+         padding: 20px;
+         text-decoration: none;
+         color: $text-color;
+         border-radius: 10px;
+         border: 2px solid $text-color;
+         }
+      }
+   }
+}
+@media only screen and (min-width: 960px){
+  .hero_container .hero:hover {
+    background: linear-gradient(to top, rgba(57, 95, 220, 0.994),rgba(248, 248, 250, 0.01)), url(../../assets/img/hero.avif);
+    transition: all 0.9s ease-in-out;
+    background-size: cover;
+    .button_slogan{
+      background-color: rgba(39, 30, 111, 0.628);
+      transition: all 0.5s ease-in;
+      font-size: 1.5em;
+    }
+  }
+}
+.main {
+  text-align: center; 
+  .about_h1 {
+    padding-top: 30px;
+  }
+}
+.about {
+  .mission {
+    display: flex;
+    max-width: 90%;
+    margin: 2em auto;
+    .foreste {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0.5em;
+      padding: 1em;
+      text-align: center;
+      background-image: url("../../assets/img/back_foreste.jpg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      p{
+        background-color: #1f1e1e7f;
+        border-radius: 5px;
+      }
+    }
+    .coste {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0.5em;
+      padding: 1em;
+      text-align: center;
+      background-image: url("../../assets/img/back_spiagge.jpg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      p{
+        background-color: #1f1e1e7f;
+        border-radius: 5px;
+      }
+    }
+    .oceani {
+      box-sizing: border-box;
+      margin: 0.5em;
+      width: 100%;
+      padding: 1em;
+      text-align: center;
+      background-image: url("../../assets/img/back_oceani.jpeg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      p{
+        background-color: #1f1e1e7f;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 960px){
+  .about .mission{
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+.projects_hero{
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.727), rgba(255, 255, 255, 0.727)), url("../../assets/img/projects_hero.png");
+  background-size: contain;
+  background-repeat: repeat;
+  h1{
+    font-size: 35;
+    color: $primary-color;
+    padding: 4vh;
+  }
+}
+
+.project_box_container{
+  display: grid;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  .box1{
+    background-color: lighten($primary-color, 20%);
+    padding: 1.5em;
+    border: 2px solid ;
+    border-radius: 10px;
+  }
+  .box2{
+    background-color: #ffffff4e;
+    padding: 1.5em;
+    border: 2px solid ;
+    border-radius: 10px;
+  }
+  .box3{
+    background-color: rgba(39, 30, 111, 0.705);
+    padding: 1.5em;
+    border: 2px solid ;
+    border-radius: 10px;
+  }
+  .box4{
+    background-color: rgba(30, 57, 111, 0.731);
+    padding: 1.5em;
+    border: 2px solid ;
+    border-radius: 10px;
+    grid-column: span 3;
+  }
+}
+@media only screen and (max-width:950px){
+  .project_box_container{
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    height: auto;
+    .box4{
+      background-color: rgba(30, 57, 111, 0.731);
+      padding: 1.5em;
+      border: 2px solid ;
+      border-radius: 10px;
+      grid-column: auto;
+    }
+  }
+}
+@media only screen and (max-width:505px){
+  .project_box_container{
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    height: auto;
+  }
+}
+#contatti h2, p{
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 1em;
+}
+.form{
+  max-width: 80%;
+  height: auto;
+  margin:auto;
+  padding: 1em;
+  .btn btn-secondary{
+    justify-content: center;
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  padding: 0.5em;
+  .rights{
+    font-size: 12;
+  }
+  .icon{
+    padding-left: 5px;
+  };
+}

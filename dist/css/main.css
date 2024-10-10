@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(38, 65, 54);
+  color: #fff;
+  font-style: sans-serif;
+  font-weight: 500;
+  font-size: 18;
+}
+
+nav {
+  min-height: 10vh;
+}
+
+.img_logo {
+  max-width: 80px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.hero_container {
+  min-height: 50vh;
+  padding-top: 10vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.hero_container .hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to top, rgba(38, 65, 54, 0.954), rgba(38, 38, 65, 0.01)), url("../../assets/img/hero_2.avif");
+  background-position: center;
+  background-size: cover;
+}
+.hero_container .hero .slogan {
+  padding-top: 6vh;
+  text-align: center;
+}
+.hero_container .hero .slogan h2 {
+  color: #fff;
+  font-size: 3rem;
+  padding: 20px;
+}
+.hero_container .hero .slogan .button_slogan {
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+@media only screen and (min-width: 960px) {
+  .hero_container .hero:hover {
+    background: linear-gradient(to top, rgba(57, 95, 220, 0.994), rgba(248, 248, 250, 0.01)), url(../../assets/img/hero.avif);
+    transition: all 0.9s ease-in-out;
+    background-size: cover;
+  }
+  .hero_container .hero:hover .button_slogan {
+    background-color: rgba(39, 30, 111, 0.628);
+    transition: all 0.5s ease-in;
+    font-size: 1.5em;
+  }
+}
+.main {
+  text-align: center;
+}
+.main .about_h1 {
+  padding-top: 30px;
+}
+
+.about .mission {
+  display: flex;
+  max-width: 90%;
+  margin: 2em auto;
+}
+.about .mission .foreste {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.5em;
+  padding: 1em;
+  text-align: center;
+  background-image: url("../../assets/img/back_foreste.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.about .mission .foreste p {
+  background-color: rgba(31, 30, 30, 0.4980392157);
+  border-radius: 5px;
+}
+.about .mission .coste {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.5em;
+  padding: 1em;
+  text-align: center;
+  background-image: url("../../assets/img/back_spiagge.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.about .mission .coste p {
+  background-color: rgba(31, 30, 30, 0.4980392157);
+  border-radius: 5px;
+}
+.about .mission .oceani {
+  box-sizing: border-box;
+  margin: 0.5em;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  background-image: url("../../assets/img/back_oceani.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.about .mission .oceani p {
+  background-color: rgba(31, 30, 30, 0.4980392157);
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 960px) {
+  .about .mission {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+.projects_hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.727), rgba(255, 255, 255, 0.727)), url("../../assets/img/projects_hero.png");
+  background-size: contain;
+  background-repeat: repeat;
+}
+.projects_hero h1 {
+  font-size: 35;
+  color: rgb(38, 65, 54);
+  padding: 4vh;
+}
+
+.project_box_container {
+  display: grid;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.project_box_container .box1 {
+  background-color: #4c816b;
+  padding: 1.5em;
+  border: 2px solid;
+  border-radius: 10px;
+}
+.project_box_container .box2 {
+  background-color: rgba(255, 255, 255, 0.3058823529);
+  padding: 1.5em;
+  border: 2px solid;
+  border-radius: 10px;
+}
+.project_box_container .box3 {
+  background-color: rgba(39, 30, 111, 0.705);
+  padding: 1.5em;
+  border: 2px solid;
+  border-radius: 10px;
+}
+.project_box_container .box4 {
+  background-color: rgba(30, 57, 111, 0.731);
+  padding: 1.5em;
+  border: 2px solid;
+  border-radius: 10px;
+  grid-column: span 3;
+}
+
+@media only screen and (max-width: 950px) {
+  .project_box_container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    height: auto;
+  }
+  .project_box_container .box4 {
+    background-color: rgba(30, 57, 111, 0.731);
+    padding: 1.5em;
+    border: 2px solid;
+    border-radius: 10px;
+    grid-column: auto;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .project_box_container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    height: auto;
+  }
+}
+#contatti h2, p {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 1em;
+}
+
+.form {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 1em;
+}
+.form .btn btn-secondary {
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.5em;
+}
+.footer .rights {
+  font-size: 12;
+}
+.footer .icon {
+  padding-left: 5px;
+}/*# sourceMappingURL=main.css.map */
