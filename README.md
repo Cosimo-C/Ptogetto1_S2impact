@@ -3,7 +3,7 @@ Questa repository contiene l'esercizio finale del modulo HTML e CSS.
 Chiunqua voglia darmi consigli o fare osservazioni è il benvenuto.
 
 l'esercizio è il seguente:
-Logo Start2impact
+
 Questo esercizio è progettato per aiutarti a fare pratica nella realizzazione di una pagina web utilizzando HTML e CSS.
 
 Non preoccuparti se alcuni dei concetti discussi qui ti sembrano nuovi: lo scopo di questo esercizio è proprio quello di aiutarti ad approfondire i concetti che non conosci e darti consigli per acquisire più sicurezza.
